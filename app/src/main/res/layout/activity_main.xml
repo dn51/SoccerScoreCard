@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="edu.qcc.soccerscorecard.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="USA Women's Image"
+            android:src="@drawable/ic_usaw" />
+
+        <TextView
+            android:id="@+id/tv_usaw_count"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/btn_usaw_win"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:layout_margin="8dp"
+            android:onClick="onUsawClicked"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="177dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="USA Men's Image"
+            android:src="@drawable/ic_usam" />
+
+        <TextView
+            android:id="@+id/tv_usam_count"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/btn_usam_win"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:layout_margin="8dp"
+            android:onClick="onUsamClicked"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
